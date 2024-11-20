@@ -1,6 +1,6 @@
 defmodule OpenType.Parser do
   @moduledoc false
-  use Bitwise, only_operators: true
+  import Bitwise
   require Logger
 
   # extract the TTF (or TTC) version

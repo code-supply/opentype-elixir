@@ -829,7 +829,7 @@ defmodule OpenType.Substitutions do
     g = List.last(glyphs)
 
     # backtracking is preceding glyphs
-    preceding = Enum.slice(glyphs, 0..-2)
+    preceding = Enum.slice(glyphs, 0..-2//1)
     # lookahead is following glyphs (output)
 
     # enough backtracking or lookahead to even attempt match?

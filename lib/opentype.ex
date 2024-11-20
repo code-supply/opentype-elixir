@@ -53,7 +53,7 @@ defmodule OpenType do
   """
   def parse_file(filename) do
     f = File.open!(filename)
-    data = IO.binread(f, :all)
+    data = IO.binread(f, :eof)
     new() |> parse(data)
   end
 
